@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: letraRick;
+    src: url(get-schwifty/get_schwifty.ttf);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    /* background-image: url(img/rick-and-morty-top-banner.png); */
+    /* background-image: url(img/fondo3.png); */
+    /* background-image: url(img/fondo4.png); */
+    background-image: url(img/fondo5.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:bottom;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 12px;
+    background-attachment:local;
+
+	background: linear-gradient(transparent, #5cdf5c);
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: linear-gradient(transparent, #01b0c7);
+}
+
+header{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 2rem;
+    color: #01b0c7;
+    text-shadow: 2px 6px 5px  #5cdf5c;
+    font-size: 5rem;
+    font-family: letraRick;
+    transition: 2s ease all;
+    cursor:default;
+    text-align:center;
+
+}
+h1:hover{
+    transform: rotate(360deg);
+}
+
+#search{
+    /* width: 10rem; */
+    height: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    border: solid 3px #01b0c7;
+    border-radius: 10px;
+    font-family: letraRick;
+    color: #5cdf5c;
+    transition: .2s linear;
+    margin: 2rem;
+
+}
+
+#search:focus{
+    border-color: #5cdf5c ;
+    transition: .2s linear;
+    outline: none;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* gap: 19px; */
+    overflow-y: scroll;
+    /* background-color: black; */
+}
+
+.card{
+    width: 30rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(38, 38, 38, 0.512);
+    color: white;
+    /* margin: 1rem; */
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+
+    border-radius: 7px;
+    transition: .2s linear;
+    box-shadow: 2px 2px 20px 9px rgba(0, 0, 0, 0.862);
+}
+.card:hover{
+    transition: .2s linear;
+    box-shadow: 2px 2px 20px 9px rgb(47, 47, 47);
+    background-color: rgba(0, 0, 0, 0.716);
+    transform: scale(1.1);
+}
+
+img{
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.text{
+    width: 50%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    text-transform: capitalize;
+
+    text-align: center;
+    gap: 19px;
+}
+
+.name{
+    font-size: 2rem;
+    color: #01b0c7;
+    /* font-family: letraRick; */
+}
+
+.status{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.species{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.icon-circle{
+    display: flex ;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center ; */
+}
+
+.origin{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
